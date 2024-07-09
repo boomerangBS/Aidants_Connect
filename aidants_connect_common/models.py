@@ -204,12 +204,12 @@ class FormationQuerySet(models.QuerySet):
 
 class Formation(models.Model):
     class Status(models.IntegerChoices):
-        PRESENTIAL = (auto(), "En présentiel")
-        REMOTE = (auto(), "À distance")
+        PRESENTIAL = (1, "En présentiel")
+        REMOTE = (2, "À distance")
 
     class State(models.IntegerChoices):
-        ACTIVE = (auto(), "Active")
-        CANCELLED = (auto(), "Annulé")
+        ACTIVE = (1, "Active")
+        CANCELLED = (2, "Annulé")
 
     start_datetime = models.DateTimeField("Date et heure de début de la formation")
     end_datetime = models.DateTimeField(
