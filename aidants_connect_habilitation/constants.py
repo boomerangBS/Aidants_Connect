@@ -1,12 +1,11 @@
-from enum import IntEnum, auto, unique
-
+from enum import IntEnum, unique
 
 @unique
 class HabilitationFormStep(IntEnum):
-    ISSUER = auto()
-    ORGANISATION = auto()
-    PERSONNEL = auto()
-    SUMMARY = auto()
+    ISSUER = 1
+    ORGANISATION = 2
+    PERSONNEL = 3
+    SUMMARY = 4
 
     @classmethod
     def size(cls):
