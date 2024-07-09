@@ -283,6 +283,6 @@ class MessageStakeholders(TextChoicesEnum):
 
 
 class FormationAttendantState(IntegerChoices):
-    DEFAULT = (enum.auto(), "Par défaut")
-    WAITING = (enum.auto(), "En attente")
-    CANCELLED = (enum.auto(), "Annulé")
+    DEFAULT = (1, "Par défaut")
+    WAITING = (2, "En attente")
+    CANCELLED = (3, "Annulé")
