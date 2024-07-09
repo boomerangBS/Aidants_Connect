@@ -82,5 +82,5 @@ class ReferentRequestStatuses(TextChoices):
 
 
 class HabilitationRequestCourseType(IntegerChoices):
-    CLASSIC = (auto(), "Parcours classique")
-    P2P = (auto(), "Parcours pair-à-pair")
+    CLASSIC = (1, "Parcours classique")
+    P2P = (2, "Parcours pair-à-pair")
