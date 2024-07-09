@@ -267,9 +267,9 @@ def _filepath_generator():
 
 class ExportRequest(models.Model):
     class ExportRequestState(IntegerChoices):
-        ONGOING = (auto(), "En cours")
-        DONE = (auto(), "Fini")
-        ERROR = (auto(), "Erreur")
+        ONGOING = (1, "En cours")
+        DONE = (2, "Fini")
+        ERROR = (3, "Erreur")
 
     aidant = models.ForeignKey(Aidant, on_delete=models.CASCADE)
     date = models.DateField(auto_now_add=True)
