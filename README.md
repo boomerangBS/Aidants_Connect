@@ -1,4 +1,4 @@
-# Aidants Connect
+# Aidants Connect Fixed Version
 
 [![CircleCI](https://circleci.com/gh/betagouv/Aidants_Connect/tree/main.svg?style=svg)](https://circleci.com/gh/betagouv/Aidants_Connect/tree/main)
 
